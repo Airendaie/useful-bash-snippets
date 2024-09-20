@@ -1,0 +1,4 @@
+#!/bin/bash
+#Script to rename contig IDs as chr numbers in the reference .fasta file
+
+awk '{gsub("NC_056054.1","1");gsub("NC_056055.1","2");gsub("NC_056056.1","3");gsub("NC_056057.1","4");gsub("NC_056058.1","5");gsub("NC_056059.1","6");gsub("NC_056060.1","7");gsub("NC_056061.1","8");gsub("NC_056062.1","9");gsub("NC_056063.1","10");gsub("NC_056064.1","11");gsub("NC_056065.1","12");gsub("NC_056066.1","13");gsub("NC_056067.1","14");gsub("NC_056068.1","15");gsub("NC_056069.1","16");gsub("NC_056070.1","17");gsub("NC_056071.1","18");gsub("NC_056072.1","19");gsub("NC_056073.1","20");gsub("NC_056074.1","21");gsub("NC_056075.1","22");gsub("NC_056076.1","23");gsub("NC_056077.1","24");gsub("NC_056078.1","25");gsub("NC_056079.1","26");gsub("NC_056080.1","X");print}' /exports/eddie/scratch/s2118930/data/GLIMPSE/reference/GCF_016772045.1_ARS-UI_Ramb_v2.0_genomic.fna | cat > /exports/eddie/scratch/s2118930/data/GLIMPSE/reference/GCF_016772045.1_Ramb_v2.0_mod.fna 
